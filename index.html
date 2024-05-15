@@ -20,13 +20,14 @@
     <meta property="og:image" content="[Your Image URL]">
     <title>Hotel Caribe</title>
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     
-    <header>
-        <nav>
+    <header class="navbar">
+        <nav class="navbar__nav">
             <img src="/assets/logo.svg" alt="hotel">
-            <ul>
+            <ul class="navbar__nav__list">
                 <li>
                     <a href="/">Inicio</a>
                 </li>
@@ -43,7 +44,7 @@
 
     <main>
         <!-- Jumbotron -->
-        <section>
+        <section class="jumbotron">
             <div>
                 <h2>DESPIERTA TUS SENTIDOS</h2>
                 <p>Olvídate de las preocupaciones y sumérgete en la magia del Caribe. Nuestro hotel  te ofrece un ambiente tranquilo y relajante,
@@ -138,8 +139,11 @@
             </div>
             <div>
                 <h3>Forma parte de nuestra familia</h3>
-                <form action=""></form>
-                <p></p>
+                <form action="" method="post">
+                    <input type="email" name="email" id="email" placeholder="Introduce tu Email">
+                    <button type="submit">SUSCRIBIRSE</button>
+                </form>
+                <p>© Copyright Hotel-Caribe</p>
             </div>
             <div>
                 <h3>Atajos</h3>
@@ -148,10 +152,10 @@
                         <a href="/">Inicio</a>
                     </li>
                     <li>
-                        <a href="">Servicios</a>
+                        <a href="#servios">Servicios</a>
                     </li>
                     <li>
-                        <a href="">Sobre Nosotros</a>
+                        <a href="#sobre_nosotros">Sobre Nosotros</a>
                     </li>
                 </ul>
             </div>
