@@ -7,8 +7,12 @@
     margin: unset;
     outline: unset;
     /* border: solid 1px black; */
-}
 
+    text-decoration: none;
+}
+img {
+    width: 300px;
+}
 h2 {
     font-size: 46px;
     font-weight: 700;
@@ -50,4 +54,17 @@ h3 {
     background-color: rgb(78, 152, 207);
     color: rgb(242, 242, 242);
     padding: 40px 30px;
+}
+
+
+.servicios__contenedor {
+    display: flex;
+}
+
+.servicios__contenedor__tarjeta img {
+    height: 300px;
+    width: 100%;
+
+    /* Evita deformación de imagenes */
+    object-fit: cover;
 }
