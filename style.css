@@ -41,3 +41,13 @@ h3 {
     padding: 60px 60px;
     gap: 15px;
 }
+
+.razones {
+    display: flex;
+}
+
+.razones__div {
+    background-color: rgb(78, 152, 207);
+    color: rgb(242, 242, 242);
+    padding: 40px 30px;
+}
