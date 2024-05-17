@@ -1,3 +1,18 @@
+:root {
+    --color-blanco: #ffffff;
+    --color-verde1: #53733D;
+    --color-negro: #1e1e1e;
+    --color-shadow: #2e2e2e14;
+    --color-blanco2: #f2f2f2;
+    --color-verdeg1: #7E966E;
+    --color-verdeg2: #91B17C;
+}
+
+@font-face {
+    font-family: playfair;
+    src: url("assets/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
 * {
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -16,15 +31,45 @@ img {
 h2 {
     font-size: 46px;
     font-weight: 700;
+    font-family: playfair;
 }
 
 h3 {
     font-size: 38px;
     font-weight: 700;
+    font-family: playfair;
+}
+
+p, a, button {
+    font-family: playfair;
+}
+
+.icons {
+    height: 56px;
+}
+
+.button__white {
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: solid 2px transparent;
+    background-color: var(--color-blanco);
+    color: var(--color-verde1);
+    font-weight: 700;
+    box-shadow: 5px 5px 15px var(--color-shadow);
+}
+
+.button__green {
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: solid 2px transparent;
+    background-color: var(--color-verde1);
+    color: var(--color-blanco2);
+    font-weight: 700;
+    box-shadow: 5px 5px 15px var(--color-shadow);
 }
 
 .navbar {
-    padding: 0 30px;
+    padding: 42px 30px;
 }
 .navbar__nav {
     display: flex;
@@ -46,6 +91,12 @@ h3 {
     gap: 15px;
 }
 
+.jumbotron__text {
+    background-image: linear-gradient(120deg, var(--color-verdeg1), var(--color-verdeg2));
+    color: var(--color-blanco2);
+    padding: 20px;
+}
+
 .razones {
     display: flex;
 }
@@ -56,15 +107,83 @@ h3 {
     padding: 40px 30px;
 }
 
+.servicios {
+    background-image: linear-gradient(120deg, var(--color-verdeg1), var(--color-verdeg2));
+}
 
 .servicios__contenedor {
     display: flex;
+    gap: 15px;
+    padding: 0 60px;
+}
+
+.servicios__contenedor__tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .servicios__contenedor__tarjeta img {
     height: 300px;
     width: 100%;
-
     /* Evita deformación de imagenes */
     object-fit: cover;
 }
+
+.footer {
+    background-color: rgb(242, 242, 242);
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 60px;
+}
+
+.footer__nav__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__nav__util {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__nav__atajos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: right;
+}
+
+.footer__nav__lists {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__nav__form__bar {
+    display: flex;
+}
+
+.footer__nav__form__bar input {
+    background-color: rgb(30, 30, 30);
+    color: rgb(242, 242, 242);
+    width: 300px;
+    padding: 15px 30px;
+    border: solid 2px transparent;
+}
+
+.footer__nav__form__bar button {
+    background-color: rgb(78, 152, 217);
+    color: rgb(242, 242, 242);
+    padding: 15px 30px;
+    border: solid 2px transparent;
+}
+
