@@ -6,6 +6,7 @@
     --color-blanco2: #f2f2f2;
     --color-verdeg1: #7E966E;
     --color-verdeg2: #91B17C;
+    --color-azul: #4E98D9;
 }
 
 @font-face {
@@ -99,6 +100,7 @@ p, a, button {
 
 .razones {
     display: flex;
+    padding: 54px 62px;
 }
 
 .razones__div {
@@ -109,22 +111,49 @@ p, a, button {
 
 .servicios {
     background-image: linear-gradient(120deg, var(--color-verdeg1), var(--color-verdeg2));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 32px;
+    color: var(--color-blanco);
 }
 
 .servicios__contenedor {
     display: flex;
     gap: 15px;
-    padding: 0 60px;
+    padding: 97px 32px 32px 60px;
 }
 
-.servicios__contenedor__tarjeta {
+.servicios__contenedor__tarjeta1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 20px;
+    background-color: var(--color-azul);
+    color: var(--color-blanco2);
+    padding: 24px 0;
 }
 
-.servicios__contenedor__tarjeta img {
+.servicios__contenedor__tarjeta2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: var(--color-blanco);
+    color: #000000;
+    padding: 24px 0;
+}
+
+.servicios__contenedor__tarjeta1  img {
+    height: 300px;
+    width: 100%;
+    /* Evita deformación de imagenes */
+    object-fit: cover;
+}
+
+.servicios__contenedor__tarjeta2  img {
     height: 300px;
     width: 100%;
     /* Evita deformación de imagenes */
