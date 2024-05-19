@@ -9,14 +9,9 @@
     --color-azul: #4E98D9;
 }
 
-@font-face {
-    font-family: playfair;
-    src: url("assets/PlayfairDisplay-VariableFont_wght.ttf");
-}
-
 * {
     font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Playfair Display", serif;
     box-sizing: border-box;
     list-style: none;
     padding: unset;
@@ -25,24 +20,20 @@
     /* border: solid 1px black; */
 
     text-decoration: none;
+
 }
 img {
     width: 300px;
-}
+} 
+
 h2 {
     font-size: 46px;
     font-weight: 700;
-    font-family: playfair;
 }
 
 h3 {
     font-size: 38px;
     font-weight: 700;
-    font-family: playfair;
-}
-
-p, a, button {
-    font-family: playfair;
 }
 
 .icons {
@@ -72,6 +63,11 @@ p, a, button {
 .navbar {
     padding: 42px 30px;
 }
+
+.navbar img {
+    width: auto;
+}
+
 .navbar__nav {
     display: flex;
     justify-content: space-between;
@@ -103,11 +99,32 @@ p, a, button {
     padding: 54px 62px;
 }
 
+.razones img.razones__div__img {
+    height: 598px;
+    width: 40%;
+}
+
 .razones__div {
     background-color: rgb(78, 152, 207);
     color: rgb(242, 242, 242);
     padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+    width: 65%;
 }
+
+.razones__div__card img {
+    width: auto;
+}
+
+.razones__div__card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+} 
 
 .servicios {
     background-image: linear-gradient(120deg, var(--color-verdeg1), var(--color-verdeg2));
@@ -132,7 +149,7 @@ p, a, button {
     gap: 20px;
     background-color: var(--color-azul);
     color: var(--color-blanco2);
-    padding: 24px 0;
+    padding: 24px 30px;
     box-shadow: 5px 5px 15px var(--color-shadow);
 }
 
@@ -144,7 +161,7 @@ p, a, button {
     gap: 20px;
     background-color: var(--color-blanco);
     color: #000000;
-    padding: 24px 0;
+    padding: 24px 30px;
     box-shadow: 5px 5px 15px var(--color-shadow);
 }
 
