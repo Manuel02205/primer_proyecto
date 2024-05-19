@@ -133,6 +133,7 @@ p, a, button {
     background-color: var(--color-azul);
     color: var(--color-blanco2);
     padding: 24px 0;
+    box-shadow: 5px 5px 15px var(--color-shadow);
 }
 
 .servicios__contenedor__tarjeta2 {
@@ -144,6 +145,7 @@ p, a, button {
     background-color: var(--color-blanco);
     color: #000000;
     padding: 24px 0;
+    box-shadow: 5px 5px 15px var(--color-shadow);
 }
 
 .servicios__contenedor__tarjeta1  img {
@@ -158,6 +160,27 @@ p, a, button {
     width: 100%;
     /* Evita deformación de imagenes */
     object-fit: cover;
+}
+
+.conocenos {
+    display: flex; 
+    background-color: var(--color-negro);
+}
+
+.conocenos__container {
+    padding: 70px 40px;
+    color: var(--color-blanco2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.conocenos__container hr {
+    width: 200px;
+    height: 3px;
+    border-color: var(--color-azul);
+    background-color: var(--color-azul);
 }
 
 .footer {
