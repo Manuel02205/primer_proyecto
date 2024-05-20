@@ -36,6 +36,22 @@ h3 {
     font-weight: 700;
 }
 
+a.navbar__nav__list__links:link {
+    color: var(--color-blanco);
+}
+
+a.footer__nav__lists__links:link {
+    color: var(--color-negro);
+}
+
+a.navbar__nav__list__links:visited {
+    color: var(--color-negro);
+}
+
+a.footer__nav__lists__links:visited {
+    color: var(--color-azul);
+}
+
 .icons {
     height: 56px;
 }
@@ -97,6 +113,7 @@ h3 {
 .razones {
     display: flex;
     padding: 54px 62px;
+    align-items: center;
 }
 
 .razones img.razones__div__img {
@@ -149,8 +166,8 @@ h3 {
     gap: 20px;
     background-color: var(--color-azul);
     color: var(--color-blanco2);
-    padding: 24px 30px;
     box-shadow: 5px 5px 15px var(--color-shadow);
+    padding: 24px 30px;
 }
 
 .servicios__contenedor__tarjeta2 {
@@ -161,8 +178,8 @@ h3 {
     gap: 20px;
     background-color: var(--color-blanco);
     color: #000000;
-    padding: 24px 30px;
     box-shadow: 5px 5px 15px var(--color-shadow);
+    padding: 24px 30px;
 }
 
 .servicios__contenedor__tarjeta1  img {
@@ -189,8 +206,9 @@ h3 {
     color: var(--color-blanco2);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 15px;
+    width: 50%;
 }
 
 .conocenos__container hr {
@@ -198,6 +216,10 @@ h3 {
     height: 3px;
     border-color: var(--color-azul);
     background-color: var(--color-azul);
+}
+
+.conocenos img {
+    width: 50%;
 }
 
 .footer {
@@ -247,6 +269,12 @@ h3 {
     width: 300px;
     padding: 15px 30px;
     border: solid 2px transparent;
+}
+
+.footer__nav__form a {
+    color: var(--color-azul);
+    font-weight: 700;
+    font-size: 38px;
 }
 
 .footer__nav__form__bar button {
