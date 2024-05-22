@@ -4,8 +4,8 @@
     --color-negro: #1e1e1e;
     --color-shadow: #2e2e2e14;
     --color-blanco2: #f2f2f2;
-    --color-verdeg1: #7E966E;
-    --color-verdeg2: #91B17C;
+    --color-verdeg1: #7e966eb8;
+    --color-verdeg2: #91b17cbf;
     --color-azul: #4E98D9;
 }
 
@@ -42,20 +42,16 @@ h3 {
     font-weight: 700;
 }
 
-a.navbar__nav__list__links:link {
-    color: var(--color-blanco);
-}
-
-a.footer__nav__lists__links:link {
-    color: var(--color-negro);
-}
-
-a.navbar__nav__list__links:visited {
-    color: var(--color-negro);
-}
-
-a.footer__nav__lists__links:visited {
-    color: var(--color-azul);
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(assets/Comprimidas/piscina_background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1000;
 }
 
 .icons {
@@ -70,6 +66,7 @@ a.footer__nav__lists__links:visited {
     color: var(--color-verde1);
     font-weight: 700;
     box-shadow: 5px 5px 15px var(--color-shadow);
+    transition: transform .3s ease-in;
 }
 
 .button__green {
@@ -80,6 +77,12 @@ a.footer__nav__lists__links:visited {
     color: var(--color-blanco2);
     font-weight: 700;
     box-shadow: 5px 5px 15px var(--color-shadow);
+    transition: transform .3s ease-in;
+}
+
+.button__white:hover,
+.button__green:hover {
+    transform: scale(1.05);
 }
 
 .navbar {
@@ -99,6 +102,18 @@ a.footer__nav__lists__links:visited {
 .navbar__nav__list {
     display: flex;
     gap: 15px;
+}
+
+.navbar__nav__list li a.navbar__nav__list__links {
+    padding: 7px;
+    color: var(--color-blanco);
+    transition: color .3s ease-in-out, transform .3s ease-in-out;;
+    display: block;
+}
+
+.navbar__nav__list li:hover a.navbar__nav__list__links {
+    color: var(--color-negro);
+    transform: scale(1.05);
 }
 
 .jumbotron {
@@ -126,6 +141,7 @@ a.footer__nav__lists__links:visited {
 .razones img.razones__div__img {
     height: 598px;
     width: 40%;
+    transform: translateX(-15px);
 }
 
 .razones__div {
@@ -160,7 +176,9 @@ a.footer__nav__lists__links:visited {
 }
 
 .servicios__contenedor {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-content: center;
     gap: 15px;
     padding: 97px 32px 32px 60px;
 }
@@ -174,7 +192,7 @@ a.footer__nav__lists__links:visited {
     background-color: var(--color-azul);
     color: var(--color-blanco2);
     box-shadow: 5px 5px 15px var(--color-shadow);
-    padding: 24px 30px;
+    padding: 20px 0px;
 }
 
 .servicios__contenedor__tarjeta2 {
@@ -186,7 +204,20 @@ a.footer__nav__lists__links:visited {
     background-color: var(--color-blanco);
     color: #000000;
     box-shadow: 5px 5px 15px var(--color-shadow);
-    padding: 24px 30px;
+    padding: 20px 0px;
+}
+.servicios__contenedor__texto {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicios__contenedor__tarjeta1 p,
+.servicios__contenedor__tarjeta2 p {
+    padding: 0 20px;
 }
 
 .servicios__contenedor__tarjeta1  img {
@@ -214,7 +245,7 @@ a.footer__nav__lists__links:visited {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 15px;
+    gap: 20px;
     width: 50%;
 }
 
@@ -223,6 +254,10 @@ a.footer__nav__lists__links:visited {
     height: 3px;
     border-color: var(--color-azul);
     background-color: var(--color-azul);
+}
+
+.conocenos__container button {
+    margin: 0 auto;
 }
 
 .conocenos img {
@@ -266,6 +301,7 @@ a.footer__nav__lists__links:visited {
     gap: 20px;
 }
 
+
 .footer__nav__form__bar {
     display: flex;
 }
@@ -278,16 +314,27 @@ a.footer__nav__lists__links:visited {
     border: solid 2px transparent;
 }
 
-.footer__nav__form a {
+.footer__nav__form span {
     color: var(--color-azul);
     font-weight: 700;
     font-size: 38px;
 }
 
 .footer__nav__form__bar button {
+    transition: transform .3s ease-in;
     background-color: rgb(78, 152, 217);
     color: rgb(242, 242, 242);
     padding: 15px 30px;
     border: solid 2px transparent;
 }
+
+.footer__nav__form__bar button:hover {
+    transform: scale(1.05);
+}
+
+
+a.footer__nav__lists__links:hover {
+    color: var(--color-negro);
+}
+
 

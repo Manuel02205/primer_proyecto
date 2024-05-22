@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- el charset utf-8 es la configuracion de caracteres -->
     <meta charset="UTF-8">
@@ -10,23 +11,27 @@
     <!-- Palabras claves para el motor de busqueda -->
     <meta name="keywords" content="hotel, caribe, vacaciones, tucacas, reserva">
     <!-- Descripcion de la pagina no superior a 120 caracteres -->
-    <meta name="description" content="Hotel Caribe: Vacaciones soñadas en el paraíso. ¡Reserva ya y vive una experiencia única">
+    <meta name="description"
+        content="Hotel Caribe: Vacaciones soñadas en el paraíso. ¡Reserva ya y vive una experiencia única">
     <!-- Autor de la pagina -->
     <meta name="author" content="Manuel Jimenez">
     <!-- Etiquetas que mejoran la visualizacion de la pagina para redes sociales -->
     <meta property="og:title" content="Hotel Caribe">
-    <meta property="og:description" content="Vacaciones soñadas en el paraíso. ¡Reserva ya y vive una experiencia única">
+    <meta property="og:description"
+        content="Vacaciones soñadas en el paraíso. ¡Reserva ya y vive una experiencia única">
     <meta property="og:url" content="/assets/favicon.png">
     <meta property="og:image" content="[Your Image URL]">
     <title>Hotel Caribe</title>
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    
+    <div class="background"></div>
     <header class="navbar">
         <nav class="navbar__nav">
             <img src="/assets/svg/logo.svg" alt="hotel" class="icons">
@@ -50,7 +55,9 @@
         <section class="jumbotron">
             <div class="jumbotron__text">
                 <h2>DESPIERTA TUS SENTIDOS</h2>
-                <p>Olvídate de las preocupaciones y sumérgete en la magia del Caribe. Nuestro hotel  te ofrece un ambiente tranquilo y relajante, donde el sonido de las olas te invita a la meditación y el confort de nuestras instalaciones te brinda el descanso que tu cuerpo y mente necesitan.</p>
+                <p>Olvídate de las preocupaciones y sumérgete en la magia del Caribe. Nuestro hotel te ofrece un
+                    ambiente tranquilo y relajante, donde el sonido de las olas te invita a la meditación y el confort
+                    de nuestras instalaciones te brinda el descanso que tu cuerpo y mente necesitan.</p>
             </div>
             <div>
                 <img src="/assets/svg/copa.svg" alt="copa de vidrio" class="icons">
@@ -65,20 +72,24 @@
                 <div class="razones__div__card">
                     <img src="/assets/svg/1.svg" alt="numero uno" class="icons">
                     <h2>Alojamiento a tu medida</h2>
-                    <p>En nuestro hotel, nos preocupamos por ofrecerte la experiencia perfecta. Por eso, nos tomamos el tiempo de conocer tus preferencias y necesidades para asignarte la habitación ideal.</p>
+                    <p>En nuestro hotel, nos preocupamos por ofrecerte la experiencia perfecta. Por eso, nos tomamos el
+                        tiempo de conocer tus preferencias y necesidades para asignarte la habitación ideal.</p>
                 </div>
                 <div class="razones__div__card">
                     <img src="/assets/svg/2.svg" alt="numero dos" class="icons">
                     <h2>Valor excepcional por tu dinero</h2>
-                    <p>No solo te ofrecemos una excelente experiencia de alojamiento, sino que también te garantizamos una relación calidad-precio inigualable.</p>
+                    <p>No solo te ofrecemos una excelente experiencia de alojamiento, sino que también te garantizamos
+                        una relación calidad-precio inigualable.</p>
                 </div>
                 <div class="razones__div__card">
                     <img src="/assets/svg/3.svg" alt="numero tres" class="icons">
                     <h2>Deliciosa experiencia gastronomica</h2>
-                    <p>Disfruta de una experiencia culinaria inolvidable en nuestro restaurante, donde te deleitaremos con platillos exquisitos preparados con ingredientes frescos y de alta calidad.</p>
+                    <p>Disfruta de una experiencia culinaria inolvidable en nuestro restaurante, donde te deleitaremos
+                        con platillos exquisitos preparados con ingredientes frescos y de alta calidad.</p>
                 </div>
             </div>
-            <img src="/assets/Comprimidas/mujer_piscina.jpg" alt="una persona relajada en la piscina tropical" class="razones__div__img">
+            <img src="/assets/Comprimidas/mujer_piscina.jpg" alt="una persona relajada en la piscina tropical"
+                class="razones__div__img">
         </section>
 
         <section id="servicios" class="servicios">
@@ -89,28 +100,44 @@
                 <div class="servicios__contenedor__tarjeta1">
                     <h2>Sencilla</h2>
                     <img src="/assets/Comprimidas/sencilla.jpg" alt="habitacion sencilla">
-                    <p>Acogedora habitación ideal para 1 o 2 personas, equipada con cama individual o doble, baño privado y Wi-Fi gratuito. Perfecta para viajeros solitarios o parejas que buscan una estancia cómoda y práctica</p>
-                    <button class="button__white">RESERVAR AHORA</button>
+                    <div class="servicios__contenedor__texto">
+                        <p>Acogedora habitación ideal para 1 o 2 personas, equipada con cama individual o doble, baño
+                            privado y Wi-Fi gratuito. Perfecta para viajeros solitarios o parejas que buscan una
+                            estancia cómoda y práctica</p>
+                        <button class="button__white">RESERVAR AHORA</button>
+                    </div>
                 </div>
                 <div class="servicios__contenedor__tarjeta2">
                     <h2>Duplex</h2>
                     <img src="/assets/Comprimidas/duplex.jpg" alt="habitacion duplex">
-                    <p>Amplia habitación en dos niveles para hasta 4 personas, con dos camas dobles, dos baños privados, sala de estar, cocina equipada y terraza privada. Ideal para familias o grupos de amigos que desean disfrutar de espacio y privacidad.</p>
-                    <button class="button__green">RESERVAR AHORA</button>
+                    <div class="servicios__contenedor__texto">
+                        <p>Amplia habitación en dos niveles para hasta 4 personas, con dos camas dobles, dos baños
+                            privados, sala de estar, cocina equipada y terraza privada. Ideal para familias o grupos de
+                            amigos que desean disfrutar de espacio y privacidad.</p>
+                        <button class="button__green">RESERVAR AHORA</button>
+                    </div>
                 </div>
                 <div class="servicios__contenedor__tarjeta1">
                     <h2>Matrimonial</h2>
                     <img src="/assets/Comprimidas/matrimonial.jpg" alt="habitacion matrimonial">
-                    <p>Romántica habitación para 2 personas, con cama king size, baño privado con jacuzzi y terraza privada con vista al jardín. Perfecta para parejas que buscan una escapada romántica y una experiencia única.</p>
-                    <button class="button__white">RESERVAR AHORA</button>
+                    <div class="servicios__contenedor__texto">
+                        <p>Romántica habitación para 2 personas, con cama king size, baño privado con jacuzzi y terraza
+                            privada con vista al jardín. Perfecta para parejas que buscan una escapada romántica y una
+                            experiencia única.</p>
+                        <button class="button__white">RESERVAR AHORA</button>
+                    </div>
                 </div>
                 <div class="servicios__contenedor__tarjeta2">
                     <h2>Bungalo</h2>
                     <img src="/assets/Comprimidas/bungalo.jpg" alt="habitacion bungalo">
-                    <p>Encantador alojamiento independiente para hasta cuatro personas, con dos camas dobles, dos baños privados, jardín privado con barbacoa y terraza. Ideal para quienes buscan una experiencia única en un entorno natural, con privacidad.</p>
-                    <button class="button__green">RESERVAR AHORA</button>
+                    <div class="servicios__contenedor__texto">
+                        <p>Encantador alojamiento independiente para hasta cuatro personas, con dos camas dobles, dos
+                            baños privados, jardín privado con barbacoa y terraza. Ideal para quienes buscan una
+                            experiencia única en un entorno natural, con privacidad.</p>
+                        <button class="button__green">RESERVAR AHORA</button>
+                    </div>
                 </div>
-                
+
             </div>
         </section>
 
@@ -118,7 +145,10 @@
             <div class="conocenos__container">
                 <h2>Conocenos</h2>
                 <hr>
-                <p>Nacido del sueño de brindar una experiencia única a los viajeros, Hotel Caribe abrió sus puertas en 2006. Desde entonces, hemos recibido a miles de huéspedes de todo el mundo, quienes han encontrado en nuestro hotel un refugio para escapar del ajetreo de la vida cotidiana y conectar con la belleza natural del Caribe.</p>
+                <p>Nacido del sueño de brindar una experiencia única a los viajeros, Hotel Caribe abrió sus puertas en
+                    2006. Desde entonces, hemos recibido a miles de huéspedes de todo el mundo, quienes han encontrado
+                    en nuestro hotel un refugio para escapar del ajetreo de la vida cotidiana y conectar con la belleza
+                    natural del Caribe.</p>
                 <button class="button__white">EXPLORAR</button>
             </div>
             <img src="/assets/Comprimidas/piscina_frente_mar.jpg" alt="piscina frente al mar">
@@ -143,7 +173,7 @@
                 </ul>
             </div>
             <div class="footer__nav__form">
-                <h2>Forma parte de nuestra <a href="">familia</a></h2>
+                <h2>Forma parte de nuestra <span>familia</span></h2>
                 <form action="" method="post" class="footer__nav__form__bar">
                     <input type="email" name="email" id="email" placeholder="Introduce tu Email">
                     <button type="submit">SUSCRIBIRSE</button>
@@ -168,4 +198,5 @@
     </footer>
 
 </body>
+
 </html>
